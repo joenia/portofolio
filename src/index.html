@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>portofolio</title>
+</head>
+<body class="text-white" style="background-color: #141120;">  
+
+    <!-- Navbar Start -->
+    <nav class="fixed top-0 left-0 w-full bg-[#0F0D1D] bg-opacity-90 shadow-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="/src/img/logo.png" alt="logo" class="w-13 h-13">
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-gray-400 transition">Home</a>
+                <a href="#projects" class="hover:text-gray-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-gray-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- hero section start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-col lg:flex-row items-center">
+                
+                <!-- Bagian Kiri (Teks) -->
+                <div class="w-full lg:w-1/2 self-center pt-4">
+                    <h2 class="font-bold">Hallo, Saya</h2>
+                    <h1 class="bg-gradient-to-r from-[#00BFFF] to-[#007399] bg-clip-text text-transparent text-4xl font-bold">
+                        Joenia Suci <br> Nurpermadani
+                    </h1>
+                    <p class="mb-5">Seorang mahasiswa Informatika yang sedang belajar pengembangan web dan UI/UX</p>
+                    <a href="#" class="bg-gradient-to-r from-[#00BFFF] to-[#007399] hover:from-[#0094FF] hover:to-[#005F66] text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                        View more >>
+                    </a>
+                </div>
+                
+                <!-- Bagian Kanan (Gambar) -->
+                <div class="w-full lg:w-1/2 text-center lg:text-right mt-10 lg:mt-0 px-4">
+                    <img src="/src/img/profil.png" alt="profil" class="max-w-1/2 mx-auto lg:mx-0">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- hero section end-->
+
+    <!-- Projects Section Start -->
+    <section id="projects" class="pt-24">
+        <div class="container mx-auto text-center px-6">
+            <h2 class="text-3xl font-bold">Projects</h2>
+
+            <!-- Tabs Navigation -->
+            <div class="mt-4 flex justify-center space-x-6 text-lg font-medium">
+                <button class="text-[#00BFFF] border-b-2 border-[#00BFFF] pb-1">Website</button>
+                <button class="text-gray-400 hover:text-white transition">UI/UX</button>
+                <button class="text-gray-400 hover:text-white transition">3D</button>
+            </div>
+
+            <!-- Project Information -->
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold">Website Eco Friendly</h3>
+                <p class="text-gray-300">HTML, CSS, Javascript</p>
+            </div>
+
+            <!-- Project Preview -->
+            <div class="mt-6 flex justify-center">
+                <img src="/src/img/project web.png" alt="Website Preview" class="w-96 rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section End -->
+
+     <!-- Footer Start -->
+     <footer class="bg-[#0F0D1D] text-white pt-10 mt-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6">
+
+                <!-- Left Side (Logo & Navigation) -->
+                <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <img src="/src/img/logo.png" alt="Logo" class="w-10 h-10"> <!-- Ganti dengan path logo -->
+                    <nav class="flex space-x-6">
+                        <a href="#home" class="hover:text-gray-400 transition">Home</a>
+                        <a href="#projects" class="hover:text-gray-400 transition">Projects</a>
+                        <a href="#contact" class="hover:text-gray-400 transition">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- Right Side (Social Media & Email) -->
+                <div class="flex flex-col items-center md:items-end space-y-2 mt-6 md:mt-0">
+                    <span class="text-sm text-gray-400">Let's Connect</span>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-lg"></i>
+                        </a>
+                    </div>
+                    <span class="text-sm">joeniasuci@gmail.com</span>
+                </div>
+
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="text-center py-4 text-gray-500 text-sm">
+                © 2025
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+</html>
