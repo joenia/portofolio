@@ -15,7 +15,7 @@
     <!-- Navbar Start -->
     <nav class="fixed top-0 left-0 w-full bg-[#0F0D1D] bg-opacity-90 shadow-md z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <img src="/src/img/logo.png" alt="logo" class="w-13 h-13">
+            <img src="img/logo.png" alt="logo" class="w-13 h-13">
             <div class="hidden md:flex space-x-6">
                 <a href="#home" class="hover:text-gray-400 transition">Home</a>
                 <a href="#projects" class="hover:text-gray-400 transition">Projects</a>
@@ -53,51 +53,49 @@
     <!-- hero section end-->
 
     <!-- Projects Section Start -->
+             <!-- Projects Section Start -->
     <section id="projects" class="pt-24">
         <div class="container mx-auto text-center px-6">
             <h2 class="text-3xl font-bold">Projects</h2>
 
             <!-- Tabs Navigation -->
             <div class="mt-4 flex justify-center space-x-6 text-lg font-medium">
-                <button class="text-[#00BFFF] border-b-2 border-[#00BFFF] pb-1">Website</button>
-                <button class="text-gray-400 hover:text-white transition">UI/UX</button>
-                <button class="text-gray-400 hover:text-white transition">3D</button>
+                <button class="tab-button text-[#00BFFF] border-b-2 border-[#00BFFF] pb-1" data-category="website">Website</button>
+                <button class="tab-button text-gray-400 hover:text-white transition" data-category="uiux">UI/UX</button>
+                <button class="tab-button text-gray-400 hover:text-white transition" data-category="modelling">3D</button>
             </div>
 
             <!-- Project Information -->
-            <div class="mt-6">
+            <div id="project-content" class="mt-6">
                 <h3 class="text-xl font-semibold">Website Eco Friendly</h3>
                 <p class="text-gray-300">HTML, CSS, Javascript</p>
-            </div>
-
-            <!-- Project Preview -->
-            <div class="mt-6 flex justify-center">
-                <img src="/src/img/project web.png" alt="Website Preview" class="w-96 rounded-lg shadow-lg">
+                <div class="mt-6 flex justify-center">
+                    <img src="img/project web.png" alt="Website Preview" class="w-96 rounded-lg shadow-lg">
+                </div>
             </div>
         </div>
     </section>
     <!-- Projects Section End -->
 
      <!-- Footer Start -->
-     <footer class="bg-[#0F0D1D] text-white pt-10 mt-20">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6">
-
+     <footer class="bg-[#0F0D1D] text-white pt-10 mt-20 w-full">
+        <div class="px-6 max-w-full">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6 w-full">
                 <!-- Left Side (Logo & Navigation) -->
                 <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
-                    <img src="/src/img/logo.png" alt="Logo" class="w-10 h-10"> <!-- Ganti dengan path logo -->
+                    <img src="img/logo.png" alt="Logo" class="w-10 h-10"> 
                     <nav class="flex space-x-6">
                         <a href="#home" class="hover:text-gray-400 transition">Home</a>
                         <a href="#projects" class="hover:text-gray-400 transition">Projects</a>
                         <a href="#contact" class="hover:text-gray-400 transition">Contact</a>
                     </nav>
                 </div>
-
+    
                 <!-- Right Side (Social Media & Email) -->
                 <div class="flex flex-col items-center md:items-end space-y-2 mt-6 md:mt-0">
                     <span class="text-sm text-gray-400">Let's Connect</span>
                     <div class="flex space-x-4">
-                        <a href="https://instagram.com" target="_blank">
+                        <a href="https://www.instagram.com/joenia_sn/" target="_blank">
                             <i class="fa-brands fa-instagram fa-lg"></i>
                         </a>
                         <a href="https://linkedin.com" target="_blank">
@@ -106,16 +104,16 @@
                     </div>
                     <span class="text-sm">joeniasuci@gmail.com</span>
                 </div>
-
             </div>
-
+    
             <!-- Copyright Section -->
-            <div class="text-center py-4 text-gray-500 text-sm">
+            <div class="text-center py-4 text-gray-500 text-sm w-full">
                 © 2025
             </div>
         </div>
     </footer>
+    
     <!-- Footer End -->
-
+    <script src="script.js"></script>
 </body>
 </html>
